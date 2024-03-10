@@ -5,7 +5,8 @@ import google.auth.transport.requests                                           
 from google.oauth2 import id_token                                              # Import Google OAuth2 ID token module
 import requests                                                                 # Import requests module for making HTTP requests
 from bs4 import BeautifulSoup                                                   # Import BeautifulSoup for web scraping
-import nltk                                                                     # Import NLTK for natural language processing tasks
+import nltk
+nltk.download('universal_tagset')                                                                  # Import NLTK for natural language processing tasks
 from nltk.tokenize import sent_tokenize, word_tokenize                          # Import NLTK tokenizers
 from nltk import pos_tag                                                        # Import NLTK part-of-speech tagging
 import psycopg2                                                                 # Import psycopg2 for PostgreSQL database interaction
