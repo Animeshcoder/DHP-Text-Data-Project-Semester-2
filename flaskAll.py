@@ -231,7 +231,7 @@ def callback():
 @app.route('/protected')
 def protected():
     # Check if the user is logged in and the email matches a specific email
-    if 'username' in session and session['username'] == 'kajolkashipuri2005@gmail.com':
+    if 'username' in session and session['username'] == 'animeshawasthi006@gmail.com':
         # Fetch all records from the news_analysis table
         cur.execute("SELECT * FROM news_analysis")
         url_history = cur.fetchall()
